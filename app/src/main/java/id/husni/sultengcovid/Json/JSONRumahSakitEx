@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "errors": [],
+  "data": [
+    {
+      "no": 1,
+      "nama": "RSUD Undata Palu",
+      "alamat": "Jalan Trans Sulawesi Tondo, Talise, Mantikulore, Kota Palu, Sulawesi Tengah 94119",
+      "telepon": "04514908020",
+      "email": "rsundata@yahoo.com",
+      "longitude": "119.881858",
+      "latitude": "-0.8578386"
+    },
+    {
+      "no": 2,
+      "nama": "RSU Anutapura Palu",
+      "alamat": "Jl. Kangkung No.1, Donggala Kodi, Palu, Kota Palu, Sulawesi Tengah 94111",
+      "telepon": "0451460570",
+      "email": "rsu_anutapurapalu@yahoo.com",
+      "longitude": "119.8494619",
+      "latitude": "-0.8998931"
+    },
+    {
+      "no": 3,
+      "nama": "RSUD Kab. Banggai Luwuk",
+      "alamat": "Jl. Imam Bonjol No.14, Bungin Tim., Luwuk, Kabupaten Banggai, Sulawesi Tengah 94711",
+      "telepon": "046121820",
+      "email": "rsud.luwuk@gmail.com",
+      "longitude": "122.8221964",
+      "latitude": "-0.9340932"
+    },
+    {
+      "no": 4,
+      "nama": "RSU Mokopido Toli-Toli",
+      "alamat": "Jl. Lanoni No.37 Kel Baru Kec Baolan kab Toli-Toli, Sulteng",
+      "telepon": "045321301",
+      "email": "mokopido@gmail.com",
+      "longitude": "120.8227769",
+      "latitude": "1.0358794"
+    },
+    {
+      "no": 5,
+      "nama": "RSUD Kolonedale",
+      "alamat": "Jalan W Monginsidi No.2, Kolonodale, Petasia, Kabupaten Morowali, Sulawesi Tengah 94971",
+      "telepon": "046521010",
+      "email": "rsudkolonodale@gmail.com",
+      "longitude": "121.3346904",
+      "latitude": "-1.9724047"
+    }
+  ]
+}

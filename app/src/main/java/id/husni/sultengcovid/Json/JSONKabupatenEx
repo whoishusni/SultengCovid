@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "errors": [],
+  "data": [
+    {
+      "no": 1,
+      "kabupaten": "Banggai",
+      "ODP": 37,
+      "PDP": 5,
+      "positif": 0,
+      "negatif": 1,
+      "meninggal": 0,
+      "selesai_pengawasan": 1,
+      "dalam_pengawasan": 4,
+      "selesai_pemantauan": 26,
+      "dalam_pemantauan": 11,
+      "updated_at": "2020-04-16T17:00:00.000000Z"
+    },
+    {
+      "no": 2,
+      "kabupaten": "Banggai Kepulauan",
+      "ODP": 8,
+      "PDP": 0,
+      "positif": 0,
+      "negatif": 0,
+      "meninggal": 0,
+      "selesai_pengawasan": 0,
+      "dalam_pengawasan": 0,
+      "selesai_pemantauan": 2,
+      "dalam_pemantauan": 6,
+      "updated_at": "2020-04-16T17:00:00.000000Z"
+    },
+    {
+      "no": 3,
+      "kabupaten": "Banggai Laut",
+      "ODP": 8,
+      "PDP": 0,
+      "positif": 0,
+      "negatif": 0,
+      "meninggal": 0,
+      "selesai_pengawasan": 0,
+      "dalam_pengawasan": 0,
+      "selesai_pemantauan": 6,
+      "dalam_pemantauan": 2,
+      "updated_at": "2020-04-16T17:00:00.000000Z"
+    }
+
+  ]
+}
