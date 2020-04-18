@@ -1,7 +1,7 @@
 # SultengCovid (Under Development)  
 Information About Covid-19 Outbreak in Central Celebes, Indonesia  
 
-## Api  
+## API  
 - [Banua Coder](https://github.com/RyanAidilPratama/PICO_SULTENG_API)  
 
 ## Library  
