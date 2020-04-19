@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.title = getString(R.string.app_name)
         setSupportActionBar(mainToolbar)
 
         val viewModel : ProvinceViewModel = ViewModelProvider(this, NewInstanceFactory()).get(ProvinceViewModel::class.java)
