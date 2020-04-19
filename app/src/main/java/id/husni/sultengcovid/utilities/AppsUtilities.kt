@@ -1,4 +1,4 @@
-package id.husni.sultengcovid.Utilities
+package id.husni.sultengcovid.utilities
 
 class AppsUtilities {
     companion object{

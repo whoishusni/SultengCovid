@@ -2,17 +2,23 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="AppTheme.mainProvinceTextValue" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/provinceValueTextSize</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_weight">1</item>
+    </style>
+    <style name="AppTheme.cardItemStyle" >
+        <item name="android:layout_marginTop">@dimen/marginVertical</item>
+        <item name="android:layout_marginBottom">@dimen/marginVertical</item>
+        <item name="android:layout_marginStart">@dimen/marginHorizontal</item>
+        <item name="android:layout_marginEnd">@dimen/marginHorizontal</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
     </style>
 
 

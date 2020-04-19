@@ -2,8 +2,8 @@ package id.husni.sultengcovid.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import id.husni.sultengcovid.ServiceApi.ApiEndpoint
-import id.husni.sultengcovid.ServiceApi.RetrofitServiceApi
+import id.husni.sultengcovid.serviceapi.ApiEndpoint
+import id.husni.sultengcovid.serviceapi.RetrofitServiceApi
 import id.husni.sultengcovid.model.Province
 import retrofit2.Call
 import retrofit2.Callback

@@ -4,5 +4,9 @@
     <dimen name="inner_margin">10dp</dimen>
     <dimen name="card_elevation">4dp</dimen>
     <dimen name="card_radius">8dp</dimen>
-    <dimen name="provinceValueTextSize">17dp</dimen>
+    <dimen name="provinceValueTextSize">17sp</dimen>
+    <dimen name="marginHorizontal">10dp</dimen>
+    <dimen name="marginVertical">7dp</dimen>
+    <dimen name="districtNameTextSize">17sp</dimen>
+    <dimen name="districtValueTextSize">14sp</dimen>
 </resources>

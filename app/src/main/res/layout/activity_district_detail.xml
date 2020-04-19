@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DistrictDetail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/districtDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/main_margin">
+
+        <TextView
+            android:id="@+id/tvDistrictNameDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:text="District Name" />
+
+        <TextView
+            android:id="@+id/tvDistrictOdpDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:textSize="18sp"
+            tools:text="ODP"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_odp"/>
+
+        <TextView
+            android:id="@+id/tvDistrictPdpDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:textSize="18sp"
+            tools:text="PDP"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_info_pdp"/>
+
+        <TextView
+            android:id="@+id/tvDistrictPositiveDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:textSize="18sp"
+            tools:text="Positive"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_positive_emoji"/>
+
+        <TextView
+            android:id="@+id/tvDistrictNegativeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:textSize="18sp"
+            tools:text="Negative"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_negative_emoji"/>
+
+        <TextView
+            android:id="@+id/tvDistrictDeathsDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:textSize="18sp"
+            tools:text="Death"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_death_emoji"/>
+
+    </LinearLayout>
+
+</LinearLayout>

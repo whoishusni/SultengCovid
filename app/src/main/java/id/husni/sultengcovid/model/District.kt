@@ -1,7 +1,10 @@
 package id.husni.sultengcovid.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class District(
     @SerializedName("kabupaten")
     val districtName : String,
@@ -15,4 +18,4 @@ data class District(
     val districtNegative : Int,
     @SerializedName("meninggal")
     val districtDeaths : Int
-)
+) : Parcelable

@@ -8,7 +8,8 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDark">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/mainToolbar"
@@ -45,7 +46,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                tools:text="Province Name" />
+                tools:text="Province Name"
+                android:textColor="@android:color/black"/>
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -98,6 +100,7 @@
                         android:layout_marginEnd="10dp"
                         android:drawableStart="@drawable/ic_trending_up_mini"
                         android:text="@string/positive"
+                        android:textColor="@android:color/black"
                         android:textSize="12sp" />
 
                     <TextView
@@ -106,6 +109,7 @@
                         android:layout_marginEnd="10dp"
                         android:drawableStart="@drawable/ic_trending_down_mini"
                         android:text="@string/recovered"
+                        android:textColor="@android:color/black"
                         android:textSize="12sp" />
 
                     <TextView
@@ -113,18 +117,33 @@
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/ic_dead_mini"
                         android:text="@string/death"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"/>
                 </TableRow>
             </TableLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <androidx.core.widget.NestedScrollView
+    <LinearLayout
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/mainTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/mainViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

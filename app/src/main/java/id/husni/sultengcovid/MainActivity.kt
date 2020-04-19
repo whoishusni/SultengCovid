@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProvider.NewInstanceFactory
 import id.husni.sultengcovid.model.Province
 import id.husni.sultengcovid.viewmodel.ProvinceViewModel
+import id.husni.sultengcovid.viewpager.MainPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.title = getString(R.string.app_name)
         setSupportActionBar(mainToolbar)
+
+        mainViewPager.adapter = MainPagerAdapter(this,supportFragmentManager)
+        mainTabLayout.setupWithViewPager(mainViewPager)
 
         val viewModel : ProvinceViewModel = ViewModelProvider(this, NewInstanceFactory()).get(ProvinceViewModel::class.java)
         viewModel.setProvinceData()
