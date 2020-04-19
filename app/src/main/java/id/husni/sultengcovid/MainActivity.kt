@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity() {
         viewModel.setProvinceData()
         viewModel.getProvinceLiveData().observe(this, Observer<Province> { provinceModel ->
             tvProvinceName.text = provinceModel.dataProvince.provinceName
-            tvProvincePositive.text = provinceModel.dataProvince.provincePositive
-            tvProvinceRecovered.text = provinceModel.dataProvince.provinceRecovered
-            tvProvinceDeath.text = provinceModel.dataProvince.provinceDeath
+            tvProvincePositive.text = provinceModel.dataProvince.provincePositive.toString()
+            tvProvinceRecovered.text = provinceModel.dataProvince.provinceRecovered.toString()
+            tvProvinceDeath.text = provinceModel.dataProvince.provinceDeath.toString()
         })
     }
 

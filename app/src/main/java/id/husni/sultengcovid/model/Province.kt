@@ -10,11 +10,11 @@ data class Province(
         @SerializedName("provinsi")
         val provinceName: String,
         @SerializedName("positif")
-        val provincePositive: String,
+        val provincePositive: Int,
         @SerializedName("sembuh")
-        val provinceRecovered: String,
+        val provinceRecovered: Int,
         @SerializedName("meninggal")
-        val provinceDeath: String
+        val provinceDeath: Int
     )
 
 }
