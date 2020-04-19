@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2020.
+ * Made with ❤ by Moh Husni Mubaraq
+ * Not For Commercial Purpose
+ */
+
 package id.husni.sultengcovid.viewpager
 
 import android.content.Context
@@ -9,7 +15,7 @@ import id.husni.sultengcovid.R
 import id.husni.sultengcovid.fragment.DistrictFragment
 import id.husni.sultengcovid.fragment.HospitalFragment
 
-class MainPagerAdapter(val context : Context , fm : FragmentManager) : FragmentPagerAdapter(fm,
+class MainPagerAdapter(private val context : Context, fm : FragmentManager) : FragmentPagerAdapter(fm,
     BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
     @StringRes

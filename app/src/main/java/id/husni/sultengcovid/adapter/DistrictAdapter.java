@@ -1,7 +1,14 @@
+/*
+ * Copyright (c) 2020.
+ * Made with ❤ by Moh Husni Mubaraq
+ * Not For Commercial Purpose
+ */
+
 package id.husni.sultengcovid.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import id.husni.sultengcovid.DistrictDetail;
+import id.husni.sultengcovid.activity.DistrictDetail;
 import id.husni.sultengcovid.R;
 import id.husni.sultengcovid.model.District;
 

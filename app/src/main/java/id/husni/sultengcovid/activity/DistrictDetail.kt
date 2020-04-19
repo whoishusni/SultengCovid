@@ -1,8 +1,15 @@
-package id.husni.sultengcovid
+/*
+ * Copyright (c) 2020.
+ * Made with ❤ by Moh Husni Mubaraq
+ * Not For Commercial Purpose
+ */
+
+package id.husni.sultengcovid.activity
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import id.husni.sultengcovid.R
 import id.husni.sultengcovid.model.District
 import kotlinx.android.synthetic.main.activity_district_detail.*
 

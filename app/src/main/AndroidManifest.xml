@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DistrictDetail"></activity>
-        <activity android:name=".CustomDistrictDialog" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.AboutActivity"/>
+        <activity android:name=".activity.DistrictDetail" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

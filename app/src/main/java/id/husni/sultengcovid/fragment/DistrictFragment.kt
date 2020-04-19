@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2020.
+ * Made with ❤ by Moh Husni Mubaraq
+ * Not For Commercial Purpose
+ */
+
 package id.husni.sultengcovid.fragment
 
 import android.os.Bundle

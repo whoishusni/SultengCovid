@@ -1,11 +1,20 @@
-package id.husni.sultengcovid
+/*
+ * Copyright (c) 2020.
+ * Made with ❤ by Moh Husni Mubaraq
+ * Not For Commercial Purpose
+ */
 
+package id.husni.sultengcovid.activity
+
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProvider.NewInstanceFactory
+import id.husni.sultengcovid.R
 import id.husni.sultengcovid.model.Province
 import id.husni.sultengcovid.viewmodel.ProvinceViewModel
 import id.husni.sultengcovid.viewpager.MainPagerAdapter
@@ -36,5 +45,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.menuAbout){
+            val intent : Intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
