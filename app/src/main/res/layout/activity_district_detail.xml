@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.DistrictDetail">
+    tools:context=".activity.DistrictDetailActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/districtDetailToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="?attr/colorPrimaryDark"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
@@ -29,7 +29,8 @@
             android:layout_marginBottom="14dp"
             android:textSize="23sp"
             android:textStyle="bold"
-            tools:text="District Name" />
+            tools:text="District Name"
+            android:textColor="@android:color/black"/>
 
         <TextView
             android:id="@+id/tvDistrictOdpDetail"
@@ -39,7 +40,8 @@
             android:textSize="18sp"
             tools:text="ODP"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_odp"/>
+            android:drawableStart="@drawable/ic_odp"
+            android:textColor="@android:color/black"/>
 
         <TextView
             android:id="@+id/tvDistrictPdpDetail"
@@ -49,7 +51,8 @@
             android:textSize="18sp"
             tools:text="PDP"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_info_pdp"/>
+            android:drawableStart="@drawable/ic_info_pdp"
+            android:textColor="@android:color/black"/>
 
         <TextView
             android:id="@+id/tvDistrictPositiveDetail"
@@ -59,7 +62,8 @@
             android:textSize="18sp"
             tools:text="Positive"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_positive_emoji"/>
+            android:drawableStart="@drawable/ic_positive_emoji"
+            android:textColor="@android:color/black"/>
 
         <TextView
             android:id="@+id/tvDistrictNegativeDetail"
@@ -69,7 +73,8 @@
             android:textSize="18sp"
             tools:text="Negative"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_negative_emoji"/>
+            android:drawableStart="@drawable/ic_negative_emoji"
+            android:textColor="@android:color/black"/>
 
         <TextView
             android:id="@+id/tvDistrictDeathsDetail"
@@ -79,7 +84,8 @@
             android:textSize="18sp"
             tools:text="Death"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_death_emoji"/>
+            android:drawableStart="@drawable/ic_death_emoji"
+            android:textColor="@android:color/black"/>
 
     </LinearLayout>
 

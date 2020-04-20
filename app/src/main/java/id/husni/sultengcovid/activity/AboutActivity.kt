@@ -21,7 +21,7 @@ class AboutActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
         setSupportActionBar(aboutToolbar)
-        supportActionBar?.title = resources.getString(R.string.detail)
+        supportActionBar?.title = resources.getString(R.string.about)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
         tvAppVersion.text = BuildConfig.VERSION_NAME

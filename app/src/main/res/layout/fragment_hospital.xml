@@ -4,9 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.HospitalFragment">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hospital Fragment" />
 
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/hospitalShimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/hospital_item_placeholder"/>
+            <include layout="@layout/hospital_item_placeholder"/>
+            <include layout="@layout/hospital_item_placeholder"/>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hospitalRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </FrameLayout>

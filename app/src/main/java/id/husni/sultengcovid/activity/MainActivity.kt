@@ -48,9 +48,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.menuAbout){
-            val intent : Intent = Intent(this, AboutActivity::class.java)
-            startActivity(intent)
+        when(item.itemId){
+            R.id.menuAbout ->{
+                val intentToAbout : Intent = Intent(this, AboutActivity::class.java)
+                startActivity(intentToAbout)
+            }
+            R.id.menuShare->{
+                val intentToShare : Intent = Intent(Intent.ACTION_SEND)
+                intentToShare.type = "text/plain"
+                intentToShare.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
+                startActivity(Intent.createChooser(intentToShare,"Share"))
+            }
         }
         return super.onOptionsItemSelected(item)
     }

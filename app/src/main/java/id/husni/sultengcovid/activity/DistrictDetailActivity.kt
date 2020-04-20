@@ -14,7 +14,7 @@ import id.husni.sultengcovid.model.District
 import kotlinx.android.synthetic.main.activity_district_detail.*
 
 @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
-class DistrictDetail : AppCompatActivity() {
+class DistrictDetailActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_PARSING_DATA: String = "extra_parsing_data"

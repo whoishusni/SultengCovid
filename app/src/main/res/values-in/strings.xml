@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Sulteng Covid</string>
+    <string name="_0">0</string>
+    <string name="positive">Positif</string>
+    <string name="recovered">Sembuh</string>
+    <string name="death">Meninggal</string>
+    <string name="odp">ODP</string>
+    <string name="pdp">PDP</string>
+    <string name="about">Tentang</string>
+    <string name="district">Kabupaten</string>
+    <string name="hospital">Rumah Sakit</string>
+    <string name="negative">Negatif</string>
+    <string name="detail">Detail</string>
+    <string name="version">Versi</string>
+    <string name="developer">Developer</string>
+    <string name="mohammad_husni_mubaraq">Mohammad Husni Mubaraq</string>
+    <string name="app_tester">App Tester</string>
+    <string name="purnomo_lamala">Purnomo Lamala</string>
+    <string name="api">API</string>
+    <string name="banua_coders">Banua Coders</string>
+    <string name="find_me">Temukan Saya (Klik Dibawah) :</string>
+    <string name="github">Github</string>
+    <string name="email">Email</string>
+    <string name="tvOpening">Dibuat Dengan\u2661Untuk Manusia</string>
+    <string name="loading">Memuat…</string>
+    <string name="call">Hubungi</string>
+    <string name="share">Bagikan</string>
+    <string name="share_text">Informasi Covid-19 di Sulawesi Tengah, dapatkan Aplikasinya Disini https://github.com/whoishusni/SultengCovid/releases</string>
+</resources>

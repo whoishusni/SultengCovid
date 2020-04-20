@@ -8,7 +8,6 @@ package id.husni.sultengcovid.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,28 +19,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import id.husni.sultengcovid.activity.DistrictDetail;
+import id.husni.sultengcovid.activity.DistrictDetailActivity;
 import id.husni.sultengcovid.R;
 import id.husni.sultengcovid.model.District;
 
 public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHolder> {
-    private ArrayList<District> districts = new ArrayList<>();
-    private Context context;
+    private final ArrayList<District> districts = new ArrayList<>();
+    private final Context context;
     public DistrictAdapter(Context context) {
         this.context = context;
     }
 
-    public ArrayList<District> getDistricts() {
-        return districts;
-    }
-
     public void setDistricts(ArrayList<District> items) {
-        if (districts != null) {
-            if (districts.size() > 0) {
-                districts.clear();
-            }
-            districts.addAll(items);
+        if (districts.size() > 0) {
+            districts.clear();
         }
+        districts.addAll(items);
         notifyDataSetChanged();
     }
 
@@ -58,13 +51,10 @@ public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHo
         holder.tvDistrictPositive.setText(String.valueOf(districts.get(position).getDistrictPositive()));
         holder.tvDistrictNegative.setText(String.valueOf(districts.get(position).getDistrictNegative()));
         holder.tvDistrictDeaths.setText(String.valueOf(districts.get(position).getDistrictDeaths()));
-        holder.btnDetail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentDetail = new Intent(context, DistrictDetail.class);
-                intentDetail.putExtra(DistrictDetail.EXTRA_PARSING_DATA,districts.get(position));
-                context.startActivity(intentDetail);
-            }
+        holder.btnDetail.setOnClickListener(v -> {
+            Intent intentDetail = new Intent(context, DistrictDetailActivity.class);
+            intentDetail.putExtra(DistrictDetailActivity.EXTRA_PARSING_DATA,districts.get(position));
+            context.startActivity(intentDetail);
         });
     }
 
@@ -73,14 +63,14 @@ public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHo
         return districts.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvDistrictName;
-        public TextView tvDistrictPositive;
-        public TextView tvDistrictNegative;
-        public TextView tvDistrictDeaths;
-        public Button btnDetail;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        final TextView tvDistrictName;
+        final TextView tvDistrictPositive;
+        final TextView tvDistrictNegative;
+        final TextView tvDistrictDeaths;
+        final Button btnDetail;
 
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvDistrictName = itemView.findViewById(R.id.tvDistrictName);
             tvDistrictPositive = itemView.findViewById(R.id.tvDistrictPositive);

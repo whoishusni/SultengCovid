@@ -19,7 +19,7 @@ class MainPagerAdapter(private val context : Context, fm : FragmentManager) : Fr
     BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
     @StringRes
-    private val PAGE_TITLE = intArrayOf(R.string.district,R.string.hospital)
+    private val PAGETITLE = intArrayOf(R.string.district,R.string.hospital)
 
     override fun getItem(position: Int): Fragment {
         var fragment : Fragment? = null
@@ -31,7 +31,7 @@ class MainPagerAdapter(private val context : Context, fm : FragmentManager) : Fr
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-        return context.resources.getString(PAGE_TITLE[position])
+        return context.resources.getString(PAGETITLE[position])
     }
 
     override fun getCount(): Int {

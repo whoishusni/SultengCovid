@@ -24,10 +24,7 @@ class DistrictViewModel : ViewModel(){
         val endpoint = retrofit.create(ApiEndpoint::class.java)
         val call: Call<DistrictResponse> = endpoint.getDistrictData()
         call.enqueue(object : Callback<DistrictResponse> {
-            override fun onResponse(
-                call: Call<DistrictResponse>,
-                response: Response<DistrictResponse>
-            ) {
+            override fun onResponse(call: Call<DistrictResponse>, response: Response<DistrictResponse>) {
                 mutableDistrict.value = response.body()?.getDistrictData as ArrayList<District>
             }
 
