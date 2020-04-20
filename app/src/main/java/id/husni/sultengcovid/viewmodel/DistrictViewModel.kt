@@ -32,7 +32,7 @@ class DistrictViewModel : ViewModel(){
             }
 
             override fun onFailure(call: Call<DistrictResponse>, t: Throwable) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
             }
 
         })

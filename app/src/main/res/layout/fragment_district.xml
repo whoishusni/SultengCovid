@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".fragment.DistrictFragment">
 
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/districtShimmer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/districtRecyclerView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/district_item_placeholder"/>
+            <include layout="@layout/district_item_placeholder"/>
+            <include layout="@layout/district_item_placeholder"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -26,7 +46,7 @@
             android:layout_weight="1"
             android:drawableStart="@drawable/ic_positive_emoji_mini"
             android:text="@string/positive"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,7 +54,7 @@
             android:layout_weight="1"
             android:drawableStart="@drawable/ic_negative_emoji_mini"
             android:text="@string/negative"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,7 +62,7 @@
             android:layout_weight="1"
             android:drawableStart="@drawable/ic_death_emoji_mini"
             android:text="@string/death"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

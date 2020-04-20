@@ -6,6 +6,7 @@
 
 package id.husni.sultengcovid.fragment
 
+import android.opengl.Visibility
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -41,10 +42,23 @@ class DistrictFragment : Fragment() {
 
         val viewModel : DistrictViewModel = ViewModelProvider(this,ViewModelProvider.NewInstanceFactory()).get(DistrictViewModel::class.java)
         viewModel.setDistrictData()
+        showShimmer(true)
         viewModel.getDistrictData().observe(this, Observer<ArrayList<District>> {
             adapter.districts = it
+            showShimmer(false)
         })
 
+    }
+
+    private fun showShimmer(isShow: Boolean) {
+        if (isShow){
+            districtShimmer.showShimmer(true)
+            districtShimmer.visibility = View.VISIBLE
+        }
+        else{
+            districtShimmer.showShimmer(false)
+            districtShimmer.visibility = View.GONE
+        }
     }
 
 }

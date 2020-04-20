@@ -28,7 +28,7 @@ class ProvinceViewModel : ViewModel() {
             }
 
             override fun onFailure(call: Call<Province>, t: Throwable) {
-                TODO("not implemented")
+
             }
         })
     }
