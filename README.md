@@ -9,4 +9,4 @@ Information About Covid-19 Outbreak in Central Celebes, Indonesia
 - [LiveData](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 - [Retrofit](https://github.com/square/retrofit)  
 - [Gson](https://github.com/google/gson)  
-- Material
+- [Shimmer](https://github.com/facebook/shimmer-android)
