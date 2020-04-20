@@ -13,4 +13,8 @@ Information About Covid-19 Outbreak in Central Celebes, Indonesia
 - [LiveData](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 - [Retrofit](https://github.com/square/retrofit)  
 - [Gson](https://github.com/google/gson)  
-- [Shimmer](https://github.com/facebook/shimmer-android)
+- [Shimmer](https://github.com/facebook/shimmer-android)  
+
+## License  
+MIT License
+Copyright (c) 2020 Moh Husni Mubaraq
