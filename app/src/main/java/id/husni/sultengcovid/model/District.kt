@@ -13,15 +13,15 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class District(
     @SerializedName("kabupaten")
-    val districtName : String,
+    var districtName : String,
     @SerializedName("ODP")
-    val districtOdp : Int,
+    var districtOdp : Int,
     @SerializedName("PDP")
-    val districtPdp : Int,
+    var districtPdp : Int,
     @SerializedName("positif")
-    val districtPositive : Int,
+    var districtPositive : Int,
     @SerializedName("negatif")
-    val districtNegative : Int,
+    var districtNegative : Int,
     @SerializedName("meninggal")
-    val districtDeaths : Int
+    var districtDeaths : Int
 ) : Parcelable

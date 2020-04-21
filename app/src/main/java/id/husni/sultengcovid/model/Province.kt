@@ -14,13 +14,13 @@ data class Province(
 ) {
     class DataProvince(
         @SerializedName("provinsi")
-        val provinceName: String,
+        var provinceName: String,
         @SerializedName("positif")
-        val provincePositive: Int,
+        var provincePositive: Int,
         @SerializedName("sembuh")
-        val provinceRecovered: Int,
+        var provinceRecovered: Int,
         @SerializedName("meninggal")
-        val provinceDeath: Int
+        var provinceDeath: Int
     )
 
 }

@@ -26,4 +26,8 @@
     <string name="call">Hubungi</string>
     <string name="share">Bagikan</string>
     <string name="share_text">Informasi Covid-19 di Sulawesi Tengah, dapatkan Aplikasinya Disini https://github.com/whoishusni/SultengCovid/releases</string>
+    <string name="exit">Keluar</string>
+    <string name="exit_message">Apakah Anda Ingin Keluar Aplikasi ?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
 </resources>

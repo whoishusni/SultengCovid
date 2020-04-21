@@ -10,11 +10,11 @@ import com.google.gson.annotations.SerializedName
 
 data class Hospital(
     @SerializedName("nama")
-    val hospitalName : String,
+    var hospitalName : String,
     @SerializedName("alamat")
-    val hospitalAddress : String,
+    var hospitalAddress : String,
     @SerializedName("telepon")
-    val hospitalPhone : String,
+    var hospitalPhone : String,
     @SerializedName("email")
-    val hospitalEmail : String
+    var hospitalEmail : String
 )

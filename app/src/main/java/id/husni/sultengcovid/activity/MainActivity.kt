@@ -6,10 +6,12 @@
 
 package id.husni.sultengcovid.activity
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -61,5 +63,20 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onBackPressed() {
+        val alertDialogBuilder= AlertDialog.Builder(this)
+            .setTitle(getString(R.string.exit))
+            .setMessage(getString(R.string.exit_message))
+            .setPositiveButton(getString(R.string.yes),DialogInterface.OnClickListener { dialog, which ->
+                finish()
+            })
+            .setNegativeButton(getString(R.string.no), DialogInterface.OnClickListener { dialog, which ->
+                dialog.dismiss()
+            })
+        val dialog : AlertDialog = alertDialogBuilder.create()
+        dialog.show()
+
     }
 }

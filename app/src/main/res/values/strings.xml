@@ -26,4 +26,8 @@
     <string name="call">Call</string>
     <string name="share">Share</string>
     <string name="share_text">Covid-19 Outbreak Info in Central Celebes, get App Here https://github.com/whoishusni/SultengCovid/releases</string>
+    <string name="exit">Exit</string>
+    <string name="exit_message">Are You Sure Want To Exit ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
