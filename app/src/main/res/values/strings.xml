@@ -30,4 +30,12 @@
     <string name="exit_message">Are You Sure Want To Exit ?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="prevention">Prevention</string>
+    <string name="do_5_things">Do 5 Things</string>
+    <string name="to_stop_corona_virus">To Stop Corona Virus</string>
+    <string name="wash_your_hands_more_often">1. Wash Your Hands More Often</string>
+    <string name="use_your_elbow_to_cover_mouth_when_coughing">2. Use Your Elbow To Cover Mouth When Coughing</string>
+    <string name="_3_don_t_touch_your_face">3. Don\'t Touch Your Face</string>
+    <string name="_4_keep_a_safe_distance">4. Keep a Safe Distance</string>
+    <string name="_5_better_at_home">5. Better at Home</string>
 </resources>

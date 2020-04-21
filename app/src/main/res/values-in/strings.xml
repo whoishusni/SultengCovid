@@ -30,4 +30,12 @@
     <string name="exit_message">Apakah Anda Ingin Keluar Aplikasi ?</string>
     <string name="yes">Ya</string>
     <string name="no">Tidak</string>
+    <string name="prevention">Pencegahan</string>
+    <string name="do_5_things">Lakukan 5 Hal</string>
+    <string name="to_stop_corona_virus">Untuk Menghentikan Virus Corona</string>
+    <string name="wash_your_hands_more_often">1. Sering Cuci Tangan</string>
+    <string name="use_your_elbow_to_cover_mouth_when_coughing">2. Gunakan Siku Untuk Tutup Mulut Jika Batuk</string>
+    <string name="_3_don_t_touch_your_face">3. Jangan Sentuh Wajah</string>
+    <string name="_4_keep_a_safe_distance">4. Jaga Jarak Aman</string>
+    <string name="_5_better_at_home">5. Lebih Baik Dirumah Saja</string>
 </resources>

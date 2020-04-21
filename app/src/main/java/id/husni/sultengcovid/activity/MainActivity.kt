@@ -61,6 +61,10 @@ class MainActivity : AppCompatActivity() {
                 intentToShare.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
                 startActivity(Intent.createChooser(intentToShare,"Share"))
             }
+            R.id.menuPrevention->{
+                val intentToPrevention : Intent = Intent(this, PreventionActivity::class.java)
+                startActivity(intentToPrevention)
+            }
         }
         return super.onOptionsItemSelected(item)
     }
@@ -69,10 +73,10 @@ class MainActivity : AppCompatActivity() {
         val alertDialogBuilder= AlertDialog.Builder(this)
             .setTitle(getString(R.string.exit))
             .setMessage(getString(R.string.exit_message))
-            .setPositiveButton(getString(R.string.yes),DialogInterface.OnClickListener { dialog, which ->
+            .setPositiveButton(getString(R.string.yes),DialogInterface.OnClickListener { _, _ ->
                 finish()
             })
-            .setNegativeButton(getString(R.string.no), DialogInterface.OnClickListener { dialog, which ->
+            .setNegativeButton(getString(R.string.no), DialogInterface.OnClickListener { dialog, _ ->
                 dialog.dismiss()
             })
         val dialog : AlertDialog = alertDialogBuilder.create()

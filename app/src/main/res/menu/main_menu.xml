@@ -13,5 +13,8 @@
         android:icon="@drawable/ic_info_"
         android:title="@string/about"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/menuPrevention"
+        android:title="@string/prevention" />
 
 </menu>
