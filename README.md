@@ -1,5 +1,6 @@
-# SultengCovid (Under Development)  
+# SultengCovid  
 Information About Covid-19 Outbreak in Central Celebes, Indonesia  
+Don't Forget To Star or Fork  
 
 ## Image  
 ![DemoApps](https://user-images.githubusercontent.com/28988446/79744894-c59d0d00-8339-11ea-9c41-1ae11fb7853e.jpg)
