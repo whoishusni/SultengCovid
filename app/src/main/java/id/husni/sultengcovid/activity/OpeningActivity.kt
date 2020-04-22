@@ -21,7 +21,7 @@ class OpeningActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_opening)
         Handler().postDelayed({
-            val intentToMain : Intent = Intent(this,MainActivity::class.java)
+            val intentToMain = Intent(this,MainActivity::class.java)
             startActivity(intentToMain)
             finish()
         },1300) //delay 1,3 detik

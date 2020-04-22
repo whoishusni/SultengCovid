@@ -11,7 +11,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import id.husni.sultengcovid.BuildConfig
+import com.facebook.shimmer.BuildConfig
 import id.husni.sultengcovid.R
 import kotlinx.android.synthetic.main.activity_about.*
 
@@ -40,7 +40,7 @@ class AboutActivity : AppCompatActivity(), View.OnClickListener {
         if(v?.id == R.id.tvAboutGithub){
             val url = "https://www.github.com/whoishusni"
             val uri : Uri = Uri.parse(url)
-            val intentToGithub : Intent = Intent(Intent.ACTION_VIEW,uri)
+            val intentToGithub = Intent(Intent.ACTION_VIEW,uri)
             startActivity(intentToGithub)
         }
     }

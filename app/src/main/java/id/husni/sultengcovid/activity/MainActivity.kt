@@ -52,18 +52,22 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.menuAbout ->{
-                val intentToAbout : Intent = Intent(this, AboutActivity::class.java)
+                val intentToAbout = Intent(this, AboutActivity::class.java)
                 startActivity(intentToAbout)
             }
             R.id.menuShare->{
-                val intentToShare : Intent = Intent(Intent.ACTION_SEND)
+                val intentToShare = Intent(Intent.ACTION_SEND)
                 intentToShare.type = "text/plain"
                 intentToShare.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
                 startActivity(Intent.createChooser(intentToShare,"Share"))
             }
             R.id.menuPrevention->{
-                val intentToPrevention : Intent = Intent(this, PreventionActivity::class.java)
+                val intentToPrevention = Intent(this, PreventionActivity::class.java)
                 startActivity(intentToPrevention)
+            }
+            R.id.menuNews->{
+                val intentToNews = Intent(this, NewsActivity::class.java)
+                startActivity(intentToNews)
             }
         }
         return super.onOptionsItemSelected(item)

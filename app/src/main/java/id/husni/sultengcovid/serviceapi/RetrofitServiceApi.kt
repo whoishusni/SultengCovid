@@ -13,13 +13,19 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 object RetrofitServiceApi {
+    private val gson = GsonConverterFactory.create()
     private val okHttpClient = OkHttpClient.Builder()
         .connectTimeout(10, TimeUnit.SECONDS)
         .readTimeout(5, TimeUnit.SECONDS)
         .build() as OkHttpClient
     val retrofit = Retrofit.Builder()
         .baseUrl(AppsUtilities.BASE_URL)
-        .addConverterFactory(GsonConverterFactory.create())
+        .addConverterFactory(gson)
+        .client(okHttpClient)
+        .build() as Retrofit
+    val retrofitNews = Retrofit.Builder()
+        .baseUrl(AppsUtilities.BASE_URL_NEWS)
+        .addConverterFactory(gson)
         .client(okHttpClient)
         .build() as Retrofit
 }

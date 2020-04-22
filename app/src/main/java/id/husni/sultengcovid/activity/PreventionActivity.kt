@@ -6,11 +6,10 @@
 
 package id.husni.sultengcovid.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import id.husni.sultengcovid.R
-import kotlinx.android.synthetic.main.activity_about.*
 import kotlinx.android.synthetic.main.activity_prevention.*
 
 class PreventionActivity : AppCompatActivity() {

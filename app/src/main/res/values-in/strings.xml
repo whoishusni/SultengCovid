@@ -38,4 +38,6 @@
     <string name="_3_don_t_touch_your_face">3. Jangan Sentuh Wajah</string>
     <string name="_4_keep_a_safe_distance">4. Jaga Jarak Aman</string>
     <string name="_5_better_at_home">5. Lebih Baik Dirumah Saja</string>
+    <string name="news_api">NewsApi</string>
+    <string name="news">Berita</string>
 </resources>
