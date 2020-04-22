@@ -17,6 +17,7 @@ Don't Forget To Star or Fork this project
 - [Retrofit](https://github.com/square/retrofit)  
 - [Gson](https://github.com/google/gson)  
 - [Shimmer](https://github.com/facebook/shimmer-android)  
+- [Glide](https://github.com/bumptech/glide)  
 
 ## License  
 MIT License
