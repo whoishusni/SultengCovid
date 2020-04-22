@@ -10,6 +10,7 @@ Don't Forget To Star or Fork this project
 
 ## API  
 - [Banua Coder](https://github.com/RyanAidilPratama/PICO_SULTENG_API)  
+- [NewsApi](https://newsapi.org)  
 
 ## Library  
 - [Viewmodel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
