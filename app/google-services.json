@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1073906460226",
+    "firebase_url": "https://sulteng-covid-8d14c.firebaseio.com",
+    "project_id": "sulteng-covid-8d14c",
+    "storage_bucket": "sulteng-covid-8d14c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073906460226:android:2bb8958993b4d4acc46fdb",
+        "android_client_info": {
+          "package_name": "id.husni.sultengcovid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073906460226-a2k37h2l8v4q7aki0el2mgqar7n5aj47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZlSFa_7NotKhedN7zwHagfzxfDOklkRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073906460226-a2k37h2l8v4q7aki0el2mgqar7n5aj47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

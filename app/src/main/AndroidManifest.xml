@@ -3,6 +3,8 @@
     package="id.husni.sultengcovid">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -11,7 +13,16 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.NewsActivity"></activity>
+        <service
+            android:name=".serviceapi.FcmCloudMessageService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.NewsActivity" />
         <activity android:name=".activity.PreventionActivity" />
         <activity android:name=".activity.OpeningActivity">
             <intent-filter>

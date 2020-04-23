@@ -9,6 +9,7 @@ package id.husni.sultengcovid.activity
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
@@ -16,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProvider.NewInstanceFactory
+import com.google.firebase.iid.FirebaseInstanceId
+import com.google.firebase.messaging.FirebaseMessaging
 import id.husni.sultengcovid.R
 import id.husni.sultengcovid.model.Province
 import id.husni.sultengcovid.viewmodel.ProvinceViewModel
@@ -30,6 +33,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.title = getString(R.string.app_name)
         setSupportActionBar(mainToolbar)
+
+        FirebaseMessaging.getInstance().subscribeToTopic("all")
+        FirebaseInstanceId.getInstance().instanceId.addOnSuccessListener {
+            Log.d("Token", it.token)
+        }
 
         mainViewPager.adapter = MainPagerAdapter(this,supportFragmentManager)
         mainTabLayout.setupWithViewPager(mainViewPager)

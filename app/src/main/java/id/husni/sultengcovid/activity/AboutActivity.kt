@@ -11,7 +11,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.facebook.shimmer.BuildConfig
+import id.husni.sultengcovid.BuildConfig
 import id.husni.sultengcovid.R
 import kotlinx.android.synthetic.main.activity_about.*
 
