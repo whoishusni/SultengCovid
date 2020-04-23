@@ -4,9 +4,11 @@ Don't Forget To Star or Fork this project
 
 ## Release  
 - Sulteng Covid v1.0 [Direct Download](https://github.com/whoishusni/SultengCovid/releases/download/v.1.0/SultengCovidv1.0.apk)  
+- Sulteng Covid v1.3 [Direct Download](https://github.com/whoishusni/SultengCovid/releases/download/v.1.3/SultengCovid_v1.3.apk)  
+
 
 ## Image  
-![DemoApps](https://user-images.githubusercontent.com/28988446/79744894-c59d0d00-8339-11ea-9c41-1ae11fb7853e.jpg)
+![DemoApps](https://user-images.githubusercontent.com/28988446/79990370-8e6a5f80-84e3-11ea-8d3a-8bb2f3631625.jpg)
 
 ## API  
 - [Banua Coder](https://github.com/RyanAidilPratama/PICO_SULTENG_API)  
