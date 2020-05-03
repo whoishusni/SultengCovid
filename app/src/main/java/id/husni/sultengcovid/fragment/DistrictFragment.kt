@@ -43,7 +43,7 @@ class DistrictFragment : Fragment() {
         viewModel.setDistrictData()
         showShimmer(true)
         viewModel.getDistrictData().observe(this, Observer<ArrayList<District>> {
-            adapter.setDistricts(it)
+            adapter.setData(it)
             showShimmer(false)
         })
 
