@@ -6,11 +6,13 @@
 package id.husni.sultengcovid.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import id.husni.sultengcovid.R
+import id.husni.sultengcovid.activity.DistrictDetailActivity
 import id.husni.sultengcovid.model.District
 import kotlinx.android.synthetic.main.district_item_holder.view.*
 
@@ -31,6 +33,11 @@ class DistrictAdapter(val context: Context?) :
                 tvDistrictPositive.text = district.districtPositive.toString()
                 tvDistrictNegative.text = district.districtNegative.toString()
                 tvDistrictDeaths.text = district.districtDeaths.toString()
+                btnDistrictDetail.setOnClickListener{
+                    val intent = Intent(context,DistrictDetailActivity::class.java)
+                    intent.putExtra(DistrictDetailActivity.EXTRA_PARSING_DATA,district)
+                    context.startActivity(intent)
+                }
             }
         }
 

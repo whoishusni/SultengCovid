@@ -6,9 +6,12 @@
 package id.husni.sultengcovid.adapter
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import id.husni.sultengcovid.R
 import id.husni.sultengcovid.model.Hospital
@@ -31,6 +34,16 @@ class HospitalAdapter (val context: Context?) :
             with(itemView){
                 tvHospitalName.text = hospital.hospitalName
                 tvHospitalAddress.text = hospital.hospitalAddress
+                btnHospitalCall.setOnClickListener{
+                    val handPhone = hospital.hospitalPhone
+                    val uriHandphone = Uri.parse("tel:$handPhone")
+                    val phoneIntent = Intent(Intent.ACTION_DIAL,uriHandphone)
+                    context.startActivity(phoneIntent)
+                }
+                btnHospitalEmail.setOnClickListener{
+                    //TODO : EMAIL
+                    Toast.makeText(context,"Under Construction", Toast.LENGTH_SHORT).show()
+                }
             }
         }
 
