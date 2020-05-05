@@ -40,4 +40,5 @@
     <string name="_5_better_at_home">5. Lebih Baik Dirumah Saja</string>
     <string name="news_api">NewsApi</string>
     <string name="news">Berita</string>
+    <string name="message">Pesan</string>
 </resources>

@@ -6,6 +6,7 @@
 
 package id.husni.sultengcovid.serviceapi
 
+import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import id.husni.sultengcovid.utilities.AppsUtilities
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -14,6 +15,7 @@ import java.util.concurrent.TimeUnit
 
 object RetrofitServiceApi {
     private val gson = GsonConverterFactory.create()
+    private val rxJava3Adapter = RxJava3CallAdapterFactory.create()
     private val okHttpClient = OkHttpClient.Builder()
         .connectTimeout(10, TimeUnit.SECONDS)
         .readTimeout(5, TimeUnit.SECONDS)
@@ -21,6 +23,7 @@ object RetrofitServiceApi {
     val retrofit = Retrofit.Builder()
         .baseUrl(AppsUtilities.BASE_URL)
         .addConverterFactory(gson)
+        .addCallAdapterFactory(rxJava3Adapter)
         .client(okHttpClient)
         .build() as Retrofit
     val retrofitNews = Retrofit.Builder()

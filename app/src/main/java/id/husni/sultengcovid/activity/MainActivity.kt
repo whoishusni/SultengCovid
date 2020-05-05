@@ -14,15 +14,15 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProvider.NewInstanceFactory
 import com.google.firebase.iid.FirebaseInstanceId
 import com.google.firebase.messaging.FirebaseMessaging
 import id.husni.sultengcovid.R
 import id.husni.sultengcovid.model.Province
-import id.husni.sultengcovid.viewmodel.ProvinceViewModel
+import id.husni.sultengcovid.serviceapi.ApiEndpoint
+import id.husni.sultengcovid.serviceapi.RetrofitServiceApi
 import id.husni.sultengcovid.viewpager.MainPagerAdapter
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -42,14 +42,19 @@ class MainActivity : AppCompatActivity() {
         mainViewPager.adapter = MainPagerAdapter(this,supportFragmentManager)
         mainTabLayout.setupWithViewPager(mainViewPager)
 
-        val viewModel : ProvinceViewModel = ViewModelProvider(this, NewInstanceFactory()).get(ProvinceViewModel::class.java)
-        viewModel.setProvinceData()
-        viewModel.getProvinceLiveData().observe(this, Observer<Province> { provinceModel ->
-            tvProvinceName.text = provinceModel.dataProvince.provinceName
-            tvProvincePositive.text = provinceModel.dataProvince.provincePositive.toString()
-            tvProvinceRecovered.text = provinceModel.dataProvince.provinceRecovered.toString()
-            tvProvinceDeath.text = provinceModel.dataProvince.provinceDeath.toString()
-        })
+        val retrofit = RetrofitServiceApi.retrofit
+        val endPoint = retrofit.create(ApiEndpoint::class.java)
+        endPoint.getProvinceData()
+            .subscribeOn(Schedulers.newThread())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe { getProvinceData(it) }
+    }
+
+    private fun getProvinceData(province: Province?) {
+        tvProvinceName.text = province?.dataProvince?.provinceName
+        tvProvincePositive.text = province?.dataProvince?.provincePositive.toString()
+        tvProvinceRecovered.text = province?.dataProvince?.provinceRecovered.toString()
+        tvProvinceDeath.text = province?.dataProvince?.provinceDeath.toString()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -85,12 +90,12 @@ class MainActivity : AppCompatActivity() {
         val alertDialogBuilder= AlertDialog.Builder(this)
             .setTitle(getString(R.string.exit))
             .setMessage(getString(R.string.exit_message))
-            .setPositiveButton(getString(R.string.yes),DialogInterface.OnClickListener { _, _ ->
+            .setPositiveButton(getString(R.string.yes)) { _, _ ->
                 finish()
-            })
-            .setNegativeButton(getString(R.string.no), DialogInterface.OnClickListener { dialog, _ ->
+            }
+            .setNegativeButton(getString(R.string.no)) { dialog, _ ->
                 dialog.dismiss()
-            })
+            }
         val dialog : AlertDialog = alertDialogBuilder.create()
         dialog.show()
 

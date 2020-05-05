@@ -11,6 +11,7 @@ import id.husni.sultengcovid.model.DistrictResponse
 import id.husni.sultengcovid.model.HospitalResponse
 import id.husni.sultengcovid.model.NewsResponse
 import id.husni.sultengcovid.model.Province
+import io.reactivex.rxjava3.core.Observable
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -18,7 +19,7 @@ import retrofit2.http.Query
 interface ApiEndpoint {
     //Province
     @GET(AppsUtilities.ENDPOINT_PROVINCE)
-    fun getProvinceData() : Call<Province>
+    fun getProvinceData() : Observable<Province>
     //District
     @GET(AppsUtilities.ENDPOINT_DISTRICT)
     fun getDistrictData() : Call<DistrictResponse>

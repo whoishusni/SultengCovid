@@ -49,7 +49,7 @@ class HospitalAdapter (val context: Context?) :
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HospitalAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view : View = LayoutInflater.from(context).inflate(R.layout.hospital_item_holder, parent, false)
         return ViewHolder(view)
     }
@@ -58,7 +58,7 @@ class HospitalAdapter (val context: Context?) :
         return hospitalArray.size
     }
 
-    override fun onBindViewHolder(holder: HospitalAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindData(hospitalArray[position])
     }
 }

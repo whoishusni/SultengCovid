@@ -46,7 +46,7 @@ class NewsAdapter (val context : Context) : RecyclerView.Adapter<NewsAdapter.Vie
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view : View = LayoutInflater.from(context).inflate(R.layout.news_item_holder,parent, false)
         return ViewHolder(view)
     }
@@ -55,7 +55,7 @@ class NewsAdapter (val context : Context) : RecyclerView.Adapter<NewsAdapter.Vie
         return newsArrayList.size
     }
 
-    override fun onBindViewHolder(holder: NewsAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindData(newsArrayList[position])
     }
 }

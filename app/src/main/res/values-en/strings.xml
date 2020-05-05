@@ -40,4 +40,5 @@
     <string name="_5_better_at_home">5. Better at Home</string>
     <string name="news_api">NewsApi</string>
     <string name="news">News</string>
+    <string name="message">Message</string>
 </resources>

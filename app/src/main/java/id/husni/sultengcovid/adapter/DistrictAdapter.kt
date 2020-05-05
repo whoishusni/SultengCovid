@@ -43,7 +43,7 @@ class DistrictAdapter(val context: Context?) :
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DistrictAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view : View = LayoutInflater.from(context).inflate(R.layout.district_item_holder, parent, false)
         return ViewHolder(view)
     }
@@ -52,7 +52,7 @@ class DistrictAdapter(val context: Context?) :
         return districtArray.size
     }
 
-    override fun onBindViewHolder(holder: DistrictAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindData(districtArray[position])
     }
 
