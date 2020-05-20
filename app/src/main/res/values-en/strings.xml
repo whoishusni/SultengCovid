@@ -24,7 +24,7 @@
     <string name="tvOpening">Made With\u2661For Human</string>
     <string name="loading">Loading…</string>
     <string name="call">Call</string>
-    <string name="share">Share</string>
+    <string name="share">Share This App</string>
     <string name="share_text">Covid-19 Outbreak Info in Central Celebes, get App Here https://github.com/whoishusni/SultengCovid/releases</string>
     <string name="exit">Exit</string>
     <string name="exit_message">Are You Sure Want To Exit ?</string>
@@ -41,4 +41,10 @@
     <string name="news_api">NewsApi</string>
     <string name="news">News</string>
     <string name="message">Message</string>
+    <string name="daily_notif_key">daily_notif_key</string>
+    <string name="setting">Setting</string>
+    <string name="daily_notification">Daily Notification</string>
+    <string name="daily_update_about">Daily Update About Covid-19 at 08:00</string>
+    <string name="daily_notif_setup">Daily Notification Is Setup</string>
+    <string name="daily_notif_cancel">Daily Notification is Cancelled</string>
 </resources>

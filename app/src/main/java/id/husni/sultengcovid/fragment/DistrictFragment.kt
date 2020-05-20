@@ -42,7 +42,7 @@ class DistrictFragment : Fragment() {
         val viewModel : DistrictViewModel = ViewModelProvider(this,ViewModelProvider.NewInstanceFactory()).get(DistrictViewModel::class.java)
         viewModel.setDistrictData()
         showShimmer(true)
-        viewModel.getDistrictData().observe(this, Observer<ArrayList<District>> {
+        viewModel.getDistrictData().observe(viewLifecycleOwner, Observer<ArrayList<District>> {
             adapter.setData(it)
             showShimmer(false)
         })

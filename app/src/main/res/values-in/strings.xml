@@ -24,7 +24,7 @@
     <string name="tvOpening">Dibuat Dengan\u2661Untuk Manusia</string>
     <string name="loading">Memuat…</string>
     <string name="call">Hubungi</string>
-    <string name="share">Bagikan</string>
+    <string name="share">Share Apk Ini</string>
     <string name="share_text">Informasi Covid-19 di Sulawesi Tengah, dapatkan Aplikasinya Disini https://github.com/whoishusni/SultengCovid/releases</string>
     <string name="exit">Keluar</string>
     <string name="exit_message">Apakah Anda Ingin Keluar Aplikasi ?</string>
@@ -41,4 +41,10 @@
     <string name="news_api">NewsApi</string>
     <string name="news">Berita</string>
     <string name="message">Pesan</string>
+    <string name="daily_notif_key">daily_notif_key</string>
+    <string name="setting">Pengaturan</string>
+    <string name="daily_notification">Notifikasi Harian</string>
+    <string name="daily_update_about">Notifikasi Harian Update Covid-19 Pada Jam 08:00</string>
+    <string name="daily_notif_setup">Notifikasi Harian Telah Di Set</string>
+    <string name="daily_notif_cancel">Notiffikasi Harian Batal Di Set</string>
 </resources>

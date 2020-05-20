@@ -6,7 +6,6 @@
 
 package id.husni.sultengcovid.activity
 
-import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -68,12 +67,6 @@ class MainActivity : AppCompatActivity() {
                 val intentToAbout = Intent(this, AboutActivity::class.java)
                 startActivity(intentToAbout)
             }
-            R.id.menuShare->{
-                val intentToShare = Intent(Intent.ACTION_SEND)
-                intentToShare.type = "text/plain"
-                intentToShare.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
-                startActivity(Intent.createChooser(intentToShare,"Share"))
-            }
             R.id.menuPrevention->{
                 val intentToPrevention = Intent(this, PreventionActivity::class.java)
                 startActivity(intentToPrevention)
@@ -81,6 +74,10 @@ class MainActivity : AppCompatActivity() {
             R.id.menuNews->{
                 val intentToNews = Intent(this, NewsActivity::class.java)
                 startActivity(intentToNews)
+            }
+            R.id.menuSetting->{
+                val settingIntent = Intent(this, SettingActivity::class.java)
+                startActivity(settingIntent)
             }
         }
         return super.onOptionsItemSelected(item)

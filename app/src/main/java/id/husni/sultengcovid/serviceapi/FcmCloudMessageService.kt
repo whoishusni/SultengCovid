@@ -52,10 +52,10 @@ class FcmCloudMessageService : FirebaseMessagingService() {
         val notificationBuilder : NotificationCompat.Builder
 
         if (notifId < limitNotif){
-            val largeIcon = BitmapFactory.decodeResource(resources,R.drawable.icon)
+            val largeIcon = BitmapFactory.decodeResource(resources,R.drawable.ic_icon)
             notificationBuilder = NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentText(body)
-                .setSmallIcon(R.drawable.icon)
+                .setSmallIcon(R.drawable.ic_icon)
                 .setAutoCancel(true)
                 .setContentIntent(pendingIntent)
                 .setVibrate(longArrayOf(1000,1000,1000,1000,1000))
@@ -71,7 +71,7 @@ class FcmCloudMessageService : FirebaseMessagingService() {
 
             notificationBuilder = NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentText(body)
-                .setSmallIcon(R.drawable.icon)
+                .setSmallIcon(R.drawable.ic_icon)
                 .setAutoCancel(true)
                 .setContentIntent(pendingIntent)
                 .setVibrate(longArrayOf(1000,1000,1000,1000,1000))

@@ -44,7 +44,7 @@ class HospitalFragment : Fragment() {
         val viewModel : HospitalViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(HospitalViewModel::class.java)
         viewModel.setHospitalData()
         showShimmer(true)
-        viewModel.getHospitalData().observe(this,Observer<ArrayList<Hospital>>{
+        viewModel.getHospitalData().observe(viewLifecycleOwner,Observer<ArrayList<Hospital>>{
             adapter.setHospitals(it)
             showShimmer(false)
         })

@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/menuShare"
-        android:icon="@drawable/ic_share"
-        android:title="@string/share"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/menuSetting"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/menuAbout"
@@ -14,11 +14,11 @@
         android:title="@string/about"
         app:showAsAction="always" />
     <item
+        android:id="@+id/menuNews"
+        android:title="@string/news" />
+    <item
         android:id="@+id/menuPrevention"
         android:title="@string/prevention" />
 
-    <item
-        android:id="@+id/menuNews"
-        android:title="@string/news" />
 
 </menu>

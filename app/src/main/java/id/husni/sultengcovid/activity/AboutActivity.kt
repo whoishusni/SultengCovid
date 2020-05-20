@@ -27,6 +27,7 @@ class AboutActivity : AppCompatActivity(), View.OnClickListener {
         tvAppVersion.text = BuildConfig.VERSION_NAME
 
         tvAboutGithub.setOnClickListener(this)
+        tvAboutShare.setOnClickListener(this)
 
     }
 
@@ -37,11 +38,19 @@ class AboutActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        if(v?.id == R.id.tvAboutGithub){
-            val url = "https://www.github.com/whoishusni"
-            val uri : Uri = Uri.parse(url)
-            val intentToGithub = Intent(Intent.ACTION_VIEW,uri)
-            startActivity(intentToGithub)
+        when(v?.id){
+            R.id.tvAboutGithub->{
+                val url = "https://www.github.com/whoishusni"
+                val uri : Uri = Uri.parse(url)
+                val intentToGithub = Intent(Intent.ACTION_VIEW,uri)
+                startActivity(intentToGithub)
+            }
+            R.id.tvAboutShare->{
+                val intentToShare = Intent(Intent.ACTION_SEND)
+                intentToShare.type = "text/plain"
+                intentToShare.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
+                startActivity(Intent.createChooser(intentToShare,"Share"))
+            }
         }
     }
 }
