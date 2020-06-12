@@ -47,4 +47,5 @@
     <string name="daily_update_about">Daily Update About Covid-19 at 08:00</string>
     <string name="daily_notif_setup">Daily Notification Is Setup</string>
     <string name="daily_notif_cancel">Daily Notification is Cancelled</string>
+    <string name="update_widget">Update Widget Data</string>
 </resources>

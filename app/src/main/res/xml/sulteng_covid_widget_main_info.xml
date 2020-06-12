@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020.
+  ~ Made with ❤ by Moh Husni Mubaraq
+  ~ Not For Commercial Purpose
+  -->
+
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialKeyguardLayout="@layout/sulteng_covid_widget_main"
+    android:initialLayout="@layout/sulteng_covid_widget_main"
+    android:minWidth="250dp"
+    android:minHeight="100dp"
+    android:previewImage="@drawable/ic_icon"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen"/>

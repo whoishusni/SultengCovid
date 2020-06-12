@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020.
+  ~ Made with ❤ by Moh Husni Mubaraq
+  ~ Not For Commercial Purpose
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:angle="0"
+        android:startColor="#2a68f7"
+        android:endColor="#00c6fc"/>
+    <corners android:radius="100dp"/>
+</shape>

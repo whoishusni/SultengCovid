@@ -47,4 +47,5 @@
     <string name="daily_update_about">Notifikasi Harian Update Covid-19 Pada Jam 08:00</string>
     <string name="daily_notif_setup">Notifikasi Harian Telah Di Set</string>
     <string name="daily_notif_cancel">Notiffikasi Harian Batal Di Set</string>
+    <string name="update_widget">Perbaharui Data Widget</string>
 </resources>

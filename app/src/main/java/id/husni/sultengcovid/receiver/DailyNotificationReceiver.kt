@@ -30,7 +30,7 @@ import java.util.*
 
 
 class DailyNotificationReceiver : BroadcastReceiver() {
-
+    private lateinit var notifTitle : String
     companion object{
         const val DAILY_NOTIF_REQUEST_CODE = 100
         const val DAILY_NOTIF_REQUEST_CODE_TO_INTENT = 200
@@ -55,7 +55,6 @@ class DailyNotificationReceiver : BroadcastReceiver() {
 
     private fun setAlarm(context: Context?, it: Province) {
         val localeID = Locale("id", "ID")
-        var notifTitle = ""
 
         notifTitle = if (Locale.getDefault() == localeID){
             "Positif : ${it.dataProvince.provincePositive}, Sembuh : ${it.dataProvince.provinceRecovered}, Meninggal : ${it.dataProvince.provinceDeath}"
