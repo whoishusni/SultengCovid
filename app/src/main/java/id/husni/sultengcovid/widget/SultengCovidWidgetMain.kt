@@ -13,7 +13,6 @@ import android.content.Context
 import android.content.Intent
 import android.widget.RemoteViews
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import id.husni.sultengcovid.R
 import id.husni.sultengcovid.model.Province
@@ -23,6 +22,7 @@ import id.husni.sultengcovid.widget.SultengCovidWidgetMain.Companion.WIDGET_ACTI
 import id.husni.sultengcovid.widget.SultengCovidWidgetMain.Companion.WIDGET_ID
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.schedulers.Schedulers
+import kotlinx.coroutines.delay
 
 /**
  * Implementation of App Widget functionality.
@@ -39,10 +39,22 @@ class SultengCovidWidgetMain : AppWidgetProvider() {
             val views = RemoteViews(context?.packageName,R.layout.sulteng_covid_widget_main)
             val appWidgetManager = AppWidgetManager.getInstance(context)
             val appWidgetId = intent.getIntExtra(WIDGET_ID,0)
-            Toast.makeText(context, "Updating Data",Toast.LENGTH_SHORT).show()
-            if (context != null) {
-                updateAppWidget(context,appWidgetManager,appWidgetId)
-            }
+            Toast.makeText(context, "Updating Data...",Toast.LENGTH_SHORT).show()
+
+            //TODO : PERCOBAAN MANUAL UPDATE #2
+            views.setTextViewText(R.id.tvWidgetProvinceName,context?.resources?.getString(R.string.loading))
+            views.setTextViewText(R.id.tvWidgetProvincePositive,context?.resources?.getString(R.string._0))
+            views.setTextViewText(R.id.tvWidgetProvinceRecovered,context?.resources?.getString(R.string._0))
+            views.setTextViewText(R.id.tvWidgetProvinceDeath,context?.resources?.getString(R.string._0))
+
+            //TODO : PERCOBAAN MANUAL UPDATE #3
+            val retrofit = RetrofitServiceApi.retrofit
+            val endpoint = retrofit.create(ApiEndpoint::class.java)
+            endpoint.getProvinceData()
+                .subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe { getWidgetData(appWidgetId,appWidgetManager,it,views) }
+
             appWidgetManager.updateAppWidget(appWidgetId,views)
         }
     }
@@ -69,6 +81,7 @@ internal fun updateAppWidget(
     val views = RemoteViews(context.packageName, R.layout.sulteng_covid_widget_main)
     val retrofit = RetrofitServiceApi.retrofit
     val endpoint = retrofit.create(ApiEndpoint::class.java)
+    //TODO : PERCOBAAN MANUAL UPDATE #1
     endpoint.getProvinceData()
         .subscribeOn(Schedulers.newThread())
         .observeOn(AndroidSchedulers.mainThread())
