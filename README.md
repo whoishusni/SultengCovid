@@ -1,6 +1,6 @@
 # SultengCovid  
-Information About Covid-19 Outbreak in Central Celebes, Indonesia  
-Don't Forget To Star or Fork this project  
+Information About Covid-19 Outbreak in Central Celebes, Indonesia.  
+Don't forget to star and fork this project, I will really appreciate it  
 
 ## Features  
 - Summary about Covid-19 in Central Sulawesi  
