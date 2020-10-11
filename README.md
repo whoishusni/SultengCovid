@@ -11,10 +11,7 @@ Don't forget to star and fork this project, I will really appreciate it
 - Home-Screen Widget Province Summary  
 
 ## Releases  
-- Sulteng Covid v1.0 [Direct Download Apk](https://github.com/whoishusni/SultengCovid/releases/download/v.1.0/SultengCovidv1.0.apk)  
-- Sulteng Covid v1.3 [Direct Download Apk](https://github.com/whoishusni/SultengCovid/releases/download/v.1.3/SultengCovid_v1.3.apk)  
-- Sulteng Covid v1.5 [Direct Download Apk](https://github.com/whoishusni/SultengCovid/releases/download/v.1.5/SultengCovid_v1.5.apk) 
-- Sulteng Covid v1.7 [Direct Download Apk](https://github.com/whoishusni/SultengCovid/releases/download/v.1.7/SultengCovid_v1.7.apk)  
+  
 - Sulteng Covid v2.0 [Direct Download Apk](https://github.com/whoishusni/SultengCovid/releases/download/v.2.0/SultengCovid_v2.0.apk)
 
 
