@@ -62,23 +62,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.menuAbout ->{
-                val intentToAbout = Intent(this, AboutActivity::class.java)
-                startActivity(intentToAbout)
-            }
-            R.id.menuPrevention->{
-                val intentToPrevention = Intent(this, PreventionActivity::class.java)
-                startActivity(intentToPrevention)
-            }
-            R.id.menuNews->{
-                val intentToNews = Intent(this, NewsActivity::class.java)
-                startActivity(intentToNews)
-            }
-            R.id.menuSetting->{
-                val settingIntent = Intent(this, SettingActivity::class.java)
-                startActivity(settingIntent)
-            }
+        when (item.itemId) {
+            R.id.menuAbout -> startActivity(Intent(this, AboutActivity::class.java))
+            R.id.menuPrevention -> startActivity(Intent(this, PreventionActivity::class.java))
+            R.id.menuNews -> startActivity(Intent(this, NewsActivity::class.java))
+            R.id.menuSetting -> startActivity(Intent(this, SettingActivity::class.java))
         }
         return super.onOptionsItemSelected(item)
     }

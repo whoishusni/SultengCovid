@@ -6,13 +6,13 @@
 
 package id.husni.sultengcovid.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
+import android.view.View.GONE
+import android.view.View.VISIBLE
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
 import id.husni.sultengcovid.R
 import id.husni.sultengcovid.adapter.NewsAdapter
 import id.husni.sultengcovid.model.News
@@ -25,12 +25,13 @@ class NewsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
         setSupportActionBar(newsToolbar)
-        supportActionBar?.title = getString(R.string.news)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setHomeButtonEnabled(true)
+        supportActionBar?.apply {
+            title = getString(R.string.news)
+            setDisplayHomeAsUpEnabled(true)
+            setHomeButtonEnabled(true)
+        }
 
         val adapter = NewsAdapter(this)
-        newsRecyclerView.layoutManager = LinearLayoutManager(this)
         newsRecyclerView.adapter = adapter
 
         val viewModel : NewsViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(NewsViewModel::class.java)
@@ -43,12 +44,7 @@ class NewsActivity : AppCompatActivity() {
     }
 
     private fun showShimmer(isShow: Boolean) {
-        if(isShow){
-            newsShimmer.visibility = View.VISIBLE
-        }
-        else{
-            newsShimmer.visibility = View.GONE
-        }
+        newsShimmer.visibility = if (isShow) VISIBLE else GONE
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
