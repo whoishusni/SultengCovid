@@ -82,16 +82,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="12sp" />
 
-                <Button
-                    android:id="@+id/btnHospitalEmail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/custom_dark_red"
-                    android:drawableStart="@drawable/ic_mail"
-                    android:text="@string/email"
-                    android:textColor="@android:color/white"
-                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

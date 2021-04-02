@@ -75,12 +75,6 @@
                     android:layout_weight="1"
                     android:backgroundTint="@android:color/darker_gray"/>
 
-                <Button
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@android:color/darker_gray"/>
-
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -54,14 +54,10 @@ class DailyNotificationReceiver : BroadcastReceiver() {
     }
 
     private fun setAlarm(context: Context?, it: Province) {
-        val localeID = Locale("id", "ID")
-
-        notifTitle = if (Locale.getDefault() == localeID){
-            "Positif : ${it.dataProvince.provincePositive}, Sembuh : ${it.dataProvince.provinceRecovered}, Meninggal : ${it.dataProvince.provinceDeath}"
-        }
-        else{
-            "Positive : ${it.dataProvince.provincePositive}, Recovered : ${it.dataProvince.provinceRecovered}, Deaths : ${it.dataProvince.provinceDeath}"
-        }
+        notifTitle = context?.getString(R.string.message_notif,
+            it.dataProvince.provincePositive.toString(),
+            it.dataProvince.provinceRecovered.toString(),
+            it.dataProvince.provinceDeath.toString()).toString()
         val alarmManager = context?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val calendar = Calendar.getInstance()
         calendar.set(Calendar.HOUR_OF_DAY,8)

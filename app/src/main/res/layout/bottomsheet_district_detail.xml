@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020.
+  ~ Made with ❤ by Moh Husni Mubaraq
+  ~ Not For Commercial Purpose
+  -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity.DistrictDetailActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/districtDetailToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimaryDark"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,8 +36,8 @@
             android:textSize="18sp"
             tools:text="ODP"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_odp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            app:drawableStartCompat="@drawable/ic_odp" />
 
         <TextView
             android:id="@+id/tvDistrictPdpDetail"
@@ -51,8 +47,8 @@
             android:textSize="18sp"
             tools:text="PDP"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_info_pdp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            app:drawableStartCompat="@drawable/ic_info_pdp" />
 
         <TextView
             android:id="@+id/tvDistrictPositiveDetail"
@@ -62,8 +58,8 @@
             android:textSize="18sp"
             tools:text="Positive"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_positive_emoji"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            app:drawableStartCompat="@drawable/ic_positive_emoji" />
 
         <TextView
             android:id="@+id/tvDistrictNegativeDetail"
@@ -73,8 +69,8 @@
             android:textSize="18sp"
             tools:text="Negative"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_negative_emoji"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            app:drawableStartCompat="@drawable/ic_negative_emoji" />
 
         <TextView
             android:id="@+id/tvDistrictDeathsDetail"
@@ -84,9 +80,8 @@
             android:textSize="18sp"
             tools:text="Death"
             android:textStyle="bold"
-            android:drawableStart="@drawable/ic_death_emoji"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            app:drawableStartCompat="@drawable/ic_death_emoji" />
 
     </LinearLayout>
-
 </LinearLayout>

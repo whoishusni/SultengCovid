@@ -4,8 +4,8 @@
     <string name="positive">Positif</string>
     <string name="recovered">Sembuh</string>
     <string name="death">Meninggal</string>
-    <string name="odp">ODP</string>
-    <string name="pdp">PDP</string>
+    <string name="odp">ODP: %s</string>
+    <string name="pdp">PDP: %s</string>
     <string name="about">Tentang</string>
     <string name="district">Kabupaten</string>
     <string name="hospital">Rumah Sakit</string>
@@ -48,4 +48,8 @@
     <string name="daily_notif_setup">Notifikasi Harian Telah Di Set</string>
     <string name="daily_notif_cancel">Notiffikasi Harian Batal Di Set</string>
     <string name="update_widget">Perbaharui Data Widget</string>
+    <string name="positive_bs">Positif: %s</string>
+    <string name="death_bs">Meninggal: %s</string>
+    <string name="negative_bs">Negatif: %s</string>
+    <string name="message_notif">Positif : %s , Sembuh : %s, Meninggal : %s</string>
 </resources>

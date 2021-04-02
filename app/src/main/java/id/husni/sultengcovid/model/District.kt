@@ -10,7 +10,6 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
-@Parcelize
 data class District(
     @SerializedName("kabupaten")
     var districtName : String,
@@ -24,4 +23,4 @@ data class District(
     var districtNegative : Int,
     @SerializedName("meninggal")
     var districtDeaths : Int
-) : Parcelable
+)

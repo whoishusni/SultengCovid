@@ -2,14 +2,17 @@
     <string name="app_name">Sulteng Covid</string>
     <string name="_0">0</string>
     <string name="positive">Positive</string>
+    <string name="positive_bs">Positive: %s</string>
     <string name="recovered">Recovered</string>
     <string name="death">Death</string>
-    <string name="odp">ODP</string>
-    <string name="pdp">PDP</string>
+    <string name="death_bs">Death: %s</string>
+    <string name="odp">ODP: %s</string>
+    <string name="pdp">PDP: %s</string>
     <string name="about">About</string>
     <string name="district">District</string>
     <string name="hospital">Hospital</string>
     <string name="negative">Negative</string>
+    <string name="negative_bs">Negative: %s</string>
     <string name="detail">Detail</string>
     <string name="version">Version</string>
     <string name="developer">Developer</string>
@@ -46,4 +49,6 @@
     <string name="daily_notif_setup">Daily Notification Is Setup</string>
     <string name="daily_notif_cancel">Daily Notification is Cancelled</string>
     <string name="update_widget">Update Widget Data</string>
+    <string name="message_notif">Positive : %s , Recovered : %s, Deaths : %s</string>
+
 </resources>

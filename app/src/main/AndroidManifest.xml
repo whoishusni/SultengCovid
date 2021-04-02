@@ -30,15 +30,6 @@
 
         <activity android:name=".activity.SettingActivity" />
 
-        <service
-            android:name=".serviceapi.FcmCloudMessageService"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
         <activity android:name=".activity.NewsActivity" />
         <activity android:name=".activity.PreventionActivity" />
         <activity android:name=".activity.OpeningActivity">

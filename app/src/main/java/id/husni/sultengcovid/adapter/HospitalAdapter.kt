@@ -40,10 +40,6 @@ class HospitalAdapter (val context: Context?) :
                     val phoneIntent = Intent(Intent.ACTION_DIAL,uriHandphone)
                     context.startActivity(phoneIntent)
                 }
-                btnHospitalEmail.setOnClickListener{
-                    //TODO : EMAIL
-                    Toast.makeText(context,"Under Construction", Toast.LENGTH_SHORT).show()
-                }
             }
         }
 
