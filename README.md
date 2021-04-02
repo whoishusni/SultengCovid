@@ -12,11 +12,11 @@ Don't forget to star and fork this project, I will really appreciate it
 
 ## Releases  
   
-- Sulteng Covid v2.0 [Direct Download Apk](https://github.com/whoishusni/SultengCovid/releases/download/v.2.0/SultengCovid_v2.0.apk)
+- Sulteng Covid v2.5 [Direct Download Apk](https://github.com/whoishusni/SultengCovid/releases/download/v.2.5/SultengCovid_v.2.5.apk)
 
 
 ## Image  
-ps: Sorry For the lack of UI  
+ps: Sorry For the lack of UI (v2.0)  
 ![DemoApps](https://user-images.githubusercontent.com/28988446/79990370-8e6a5f80-84e3-11ea-8d3a-8bb2f3631625.jpg)  
 
 ## API  
